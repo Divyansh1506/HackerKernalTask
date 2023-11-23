@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "gilroy";
+    /* background-color: bisque; */
+}
+
+/* Utility */
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    z-index: 15;
+    position: absolute;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    padding: 0px 80px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 75px;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 17px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #c5c5c5;
+}
+
+nav ul img {
+    height: 50px;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.564);
+}
+
+.first {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(65, 65, 65);
+    z-index: 10;
+}
+
+.first>.image {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("./Projects-Images/P1.jpg");
+    background-size: cover;
+}
+
+.first-content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-content>* {
+    height: 75%;
+    display: flex;
+    align-items: center;
+    color: #c5c5c5;
+}
+
+.first-content :nth-child(1) {
+    width: 20%;
+}
+
+.first-content :nth-child(1) .line {
+    height: 1px;
+    width: 220px;
+    background-color: #c5c5c5;
+}
+
+/*  */
+.first-content :nth-child(2) {
+    width: 40%;
+}
+
+.first-content :nth-child(2)>* {
+    width: 70%;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+.first-content :nth-child(2) h1 {
+    font-size: 35px;
+}
+
+.first-content :nth-child(2) p {
+    font-size: 14px;
+}
+
+/*  */
+
+.first-content :nth-child(3) {
+    position: relative;
+    width: 40%;
+}
+
+.first-content :nth-child(3) .image {
+    height: 85%;
+    width: 70%;
+    background-image: url("/Projects-Images/P1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.first-content :nth-child(3) .line-h {
+    position: absolute;
+    top: 0;
+    right: 60px;
+    width: .1px;
+    height: 100px;
+    background-color: #fff;
+}
+
+.first-content :nth-child(3) .line-v {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    width: 220px;
+    height: .1px;
+    background-color: #c5c5c5;
+}
+
+.first-content :nth-child(4) {
+    width: 20%;
+}
+
+.first-content :nth-child(4) p {
+    width: 70%;
+    text-align: center;
+    font-size: 60px;
+}
+
+.second {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(18, 19, 18);
+    overflow-x: hidden;
+    color: #fff;
+
+}
+
+.second img {
+    width: 150%;
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.second-content {
+    position: relative;
+    height: 70%;
+    width: 100%;
+}
+
+.second-content h5,
+.third h5,
+.fourth h5,
+.fifth h5 {
+    position: absolute;
+    top: 20%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.circle {
+    position: absolute;
+    background-color: rgb(26, 32, 32);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 0%;
+    z-index: 100;
+}
+
+.second-content p {
+    width: 32%;
+    font-size: 17px;
+    color: #fff;
+    position: absolute;
+    right: 18%;
+    bottom: -180px;
+}
+
+.second-content a {
+    width: 32%;
+    font-size: 17px;
+    color: #fff;
+    position: absolute;
+    right: 18%;
+    bottom: -220px;
+}
+
+.third {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(35, 33, 31);
+    overflow-x: hidden;
+}
+
+.third .cards {
+    height: 70%;
+    /* width: 80%; */
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    background-color: #301c1c;
+    display: flex;
+    gap: 15px;
+    flex: 1;
+}
+
+.third .cards::-webkit-scrollbar {
+    width: 100px;
+}
+
+.card {
+    height: 520px;
+    width: 420px;
+    background-color: beige;
+}
+
+.fourth {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.fourth-content {
+    height: 60%;
+    width: 30%;
+    /* background-color: lightblue; */
+    position: absolute;
+    top: 60%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.fourth-content h2 {
+    letter-spacing: 2.5px;
+    font-size: 65px;
+    font-weight: 400;
+}
+
+.fourth-content a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #313131;
+}
+
+.fifth {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    /* background-color: rgb(123, 96, 96); */
+}
+
+.fifth-content {
+    height: 75%;
+    width: 35%;
+    /* background-color: lightblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 100px;
+    padding: 0 0 0 220px;
+}
+
+.fifth-content p {
+    font-size: 22px;
+    color: #000000;
+    text-align: start;
+    position: relative;
+}
+
+.fifth-content p img {
+    height: 70px;
+    position: absolute;
+    top: -44px;
+    left: -45px;
+    filter: opacity(0.1);
+}
+.sixth {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+.sixth-content {
+    height: 60%;
+    width: 72%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+}
+.sixth-content h2 {
+    font-size: 120px;
+    color: #fff;
+    font-weight: 100;
+}
+.social{
+    display: flex;
+    gap: 100px;
+    font-size: 23px;
+    padding-left: 25px;
+}
+.social a{
+    color: #c5c5c5;
+    text-decoration: none;
+}
+
+footer{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+.foot-content{
+    position: relative;
+    padding: 5px 100px;
+    border-top: 1px solid #c0c0c0;
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot-content a {
+    color: #c5c5c5;
+    text-decoration: none;
+}
+.foot-content .foot-line{
+    background-color: #fff;
+    height: 100px;
+    width: .2px;
+    position: absolute;
+    right: 30px;
+    top: -75px;
+}
