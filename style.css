@@ -132,9 +132,13 @@ nav ul img {
 .first-content :nth-child(3) .image {
     height: 85%;
     width: 70%;
-    background-image: url("/Projects-Images/P1.jpg");
+    /* background-image: url("/Projects-Images/P1.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+}
+.first-content :nth-child(3) .image img{
+    height: 100%;
+    width: 100%;
 }
 
 .first-content :nth-child(3) .line-h {
@@ -386,4 +390,10 @@ footer{
     position: absolute;
     right: 30px;
     top: -75px;
+}
+
+
+.card img{
+    height: 80%;
+    width: 100%;
 }
