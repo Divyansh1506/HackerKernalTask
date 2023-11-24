@@ -603,8 +603,8 @@ footer {
         display: none;
     }
 }
-
-@media only screen and (max-width: 2560px) {
+/* 
+@media (min-width:1600px) and (max-width: 2200px) {
     nav ul li {
         font-size: 2rem;
     }
@@ -636,4 +636,4 @@ footer {
     .foot-content a{
         font-size: 1.7rem;
     }
-}
+} */
