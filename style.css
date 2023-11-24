@@ -29,11 +29,12 @@ body {
 
 
 /* Hover */
-a:hover{
+a:hover {
     transform: scale(.9);
     text-decoration: none;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     color: #ffffff;
 }
 
@@ -266,7 +267,7 @@ nav ul img {
     align-items: end;
 }
 
-.cards{
+.cards {
     height: 450px;
     display: flex;
     overflow-x: auto;
@@ -274,10 +275,12 @@ nav ul img {
     background-color: #000000;
 
 }
-.cards::-webkit-scrollbar{
+
+.cards::-webkit-scrollbar {
     width: 0;
 }
-.cards .card{
+
+.cards .card {
     min-width: 370px;
     height: 400px;
     line-height: 110px;
@@ -286,27 +289,40 @@ nav ul img {
     background-color: #363030;
 
 }
-.cards .card .card-img{
+
+.cards .card .card-img {
     width: 100%;
     height: 100%;
     background-color: #c0c0c0;
     background-position: center;
     background-size: cover;
 }
-.cards .card:nth-child(1) .card-img{
+
+.cards .card:nth-child(1) .card-img {
     background-image: url("./News/With-Box/N1.png");
 }
-.cards .card:nth-child(2) .card-img{
+
+.cards .card:nth-child(2) .card-img {
     background-image: url("./News/With-Box/N2.png");
 }
-.cards .card:nth-child(3) .card-img{
+
+.cards .card:nth-child(3) .card-img {
     background-image: url("./News/With-Box/N3.png");
 }
-.cards .card:nth-child(4) .card-img{
+
+.cards .card:nth-child(4) .card-img {
     background-image: url("./News/With-Box/N4.png");
 }
-.cards .card:nth-child(5) .card-img{
+
+.cards .card:nth-child(5) .card-img {
     background-image: url("./News/With-Box/N5.png");
+}
+.cards .card:nth-child(6) .card-img {
+    background-image: url("./News/With-Box/N3.png");
+}
+
+.cards .card:nth-child(7) .card-img {
+    background-image: url("./News/With-Box/N1.png");
 }
 
 .fourth {
@@ -451,7 +467,7 @@ footer {
 
 
 
-@media only screen and (max-width: 850px){
+@media only screen and (max-width: 850px) {
     * {
         margin: 0;
         padding: 0;
@@ -493,7 +509,7 @@ footer {
         background-size: cover;
         background-position: center;
     }
-    
+
     .first-content :nth-child(2) {
         width: 100%;
         /* margin: 50px auto; */
@@ -515,6 +531,7 @@ footer {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
     .second-content p {
         width: 100%;
         font-size: 1rem;
@@ -524,6 +541,7 @@ footer {
         top: 80%;
         padding-left: 100px;
     }
+
     .second-content a {
         width: 30%;
         top: 110%;
@@ -532,13 +550,17 @@ footer {
         color: #636363;
         position: absolute;
     }
+
     .fourth-content h2 {
         font-size: 3rem;
         font-weight: 200;
     }
-    .fifth h5,.fourth h5{
-       margin-left: 28px;
+
+    .fifth h5,
+    .fourth h5 {
+        margin-left: 28px;
     }
+
     .fifth-content {
         margin-top: 120px;
         height: 100%;
@@ -550,28 +572,68 @@ footer {
         margin-right: 300px;
         transform: scale(.9);
     }
-    .fifth-content p{
+
+    .fifth-content p {
         font-size: 20px;
     }
 
-    .sixth-content h2{
+    .sixth-content h2 {
         font-size: 2.5rem;
         font-weight: 100;
     }
-    .sixth-content .social{
+
+    .sixth-content .social {
         font-size: 1.5rem;
         font-weight: 100;
         gap: 20px;
     }
-    .foot-content{
+
+    .foot-content {
         height: 100px;
         width: 100%;
     }
-    .foot-content .center,.foot-content .right{
+
+    .foot-content .center,
+    .foot-content .right {
         display: none;
     }
+
     .first-content :nth-child(3),
     .first-content :nth-child(4) {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 2560px) {
+    nav ul li {
+        font-size: 2rem;
+    }
+
+    .second-content p {
+        font-size: 28px;
+    }
+
+    .second-content h5,
+    .third h5,
+    .fourth h5,
+    .fifth h5 {
+        font-size: 2.5rem;
+    }
+    .circle {
+        height: 60px;
+        width: 60px;  
+    }
+    .fourth,.fifth{
+        height: 60vh;
+    }
+
+    .fifth p{
+        font-size: 2rem;
+    }
+    .social a{
+        font-size: 1.9rem;          
+    }
+    .foot-content a{
+        font-size: 1.7rem;
     }
 }
